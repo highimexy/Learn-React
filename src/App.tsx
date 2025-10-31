@@ -1,11 +1,13 @@
 import Header from "./header";
 import Footer from "./footer";
+import Food from "./Food";
 
 function App() {
   return (
     <>
       <Header />
-      <Footer></Footer>
+      <Food />
+      <Footer />
     </>
   );
 }
