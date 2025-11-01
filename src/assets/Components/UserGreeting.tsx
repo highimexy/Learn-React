@@ -10,9 +10,25 @@ function UserGreeting({ isLoggedIn = false, username = "default" }: UserProps) {
     return <h2>Please log in to contiune</h2>
   }
 */
-//To samo co na górze
 
-  return isLoggedIn ? <h2>Welcome: {username}</h2> : <h2>Please sign in</h2>;
+  //To samo co na górze
+
+  /* return isLoggedIn ? (
+    <h2 className="welcome-message">Welcome:{username}</h2>
+  ) : (
+    <h2 className="sign-in">Please sign in</h2>
+  );
+  */
+
+  //To samo co na górze tylko czytelniejsze
+
+  const welcomeMessage = (
+    <h2 className="welcome-message">Welcome:{username}</h2>
+  );
+
+  const loginPrompt = <h2 className="sign-in">Please sign in</h2>;
+
+  return isLoggedIn ? welcomeMessage : loginPrompt;
 }
 
 export default UserGreeting;
