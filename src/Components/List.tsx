@@ -10,6 +10,7 @@ type ListProps = {
 };
 
 function List(props: ListProps) {
+  const category = props.category;
   const itemList = props.items;
   //fruits.sort((a, b) => a.name.localeCompare(b.name)); //ALPHABETICAL
   //fruits.sort((a, b) => b.name.localeCompare(a.name)); //REVERSE
@@ -24,7 +25,12 @@ function List(props: ListProps) {
       {item.name}: &nbsp; <b>{item.kcal}</b>
     </li>
   ));
-  return <ol>{listItems}</ol>;
+  return (
+    <>
+      <h3 className="list-category">{category}</h3>
+      <ol className="list-items">{listItems}</ol>
+    </>
+  );
 }
 
 export default List;
