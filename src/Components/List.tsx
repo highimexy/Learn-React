@@ -1,17 +1,16 @@
 export type Fruit = {
-    id: number
-    name: string
-    kcal: number
-}
+  id: number;
+  name: string;
+  kcal: number;
+};
 
 type ListProps = {
-    items: Fruit[]
-    category: string
-}
+  items: Fruit[];
+  category: string;
+};
 
 function List(props: ListProps) {
-
-    const itemList = props.items;
+  const itemList = props.items;
   //fruits.sort((a, b) => a.name.localeCompare(b.name)); //ALPHABETICAL
   //fruits.sort((a, b) => b.name.localeCompare(a.name)); //REVERSE
   //fruits.sort((a,b) => a.kcal - b.kcal); // NUMERIC ORDER

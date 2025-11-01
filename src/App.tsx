@@ -6,7 +6,6 @@ import List from "./Components/List.tsx";
 import type { Fruit } from "./Components/List.tsx";
 
 function App() {
-
   const fruits: Fruit[] = [
     { id: 1, name: "Apple", kcal: 50 },
     { id: 2, name: "Orange", kcal: 60 },
@@ -20,7 +19,7 @@ function App() {
       <Student name="Barcio Senior" age={48} isStudent={false} />
       <Student />
       <UserGreeting isLoggedIn={true} username="HighImExy" />
-      <List items={fruits} category="Fruits"/>
+      <List items={fruits} category="Fruits" />
       <Button></Button>
     </>
   );
