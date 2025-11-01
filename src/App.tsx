@@ -1,6 +1,6 @@
-import Header from "./header";
-import Footer from "./footer";
-import Food from "./Food";
+import Header from "./Header.tsx";
+import Footer from "./Footer.tsx";
+import Food from "./Food.tsx";
 
 function App() {
   return (
