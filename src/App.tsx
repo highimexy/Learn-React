@@ -1,10 +1,9 @@
-import Card from "./Card.tsx";
+import Button from "./assets/Button/Button.tsx";
 
 function App() {
   return (
     <>
-      <Card />
-      <Card />
+      <Button></Button>
     </>
   );
 }
