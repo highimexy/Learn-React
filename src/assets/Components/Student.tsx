@@ -1,11 +1,19 @@
-function Student(
-  props: { name: string } & { age: number } & { isStudent: boolean }
-) {
+type StudentProps = {
+  name?: string;
+  age?: number;
+  isStudent?: boolean;
+};
+
+function Student({
+  name = "Guest",
+  age = 18,
+  isStudent = false,
+}: StudentProps) {
   return (
-    <div>
-      <p>Name: {props.name}</p>
-      <p>Age: {props.age}</p>
-      <p>Student: {props.isStudent ? "Yes" : "No"}</p>
+    <div className="student">
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+      <p>Student: {isStudent ? "Yes" : "No"}</p>
     </div>
   );
 }
