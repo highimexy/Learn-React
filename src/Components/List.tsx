@@ -6,12 +6,11 @@ export type Fruit = {
 
 type ListProps = {
   items: Fruit[];
-  category: string;
+  category?: string;
 };
 
-function List(props: ListProps) {
-  const category = props.category;
-  const itemList = props.items;
+function List({ items = [], category = "Brak kategorii" }: ListProps) {
+  const itemList = items;
   //fruits.sort((a, b) => a.name.localeCompare(b.name)); //ALPHABETICAL
   //fruits.sort((a, b) => b.name.localeCompare(a.name)); //REVERSE
   //fruits.sort((a,b) => a.kcal - b.kcal); // NUMERIC ORDER

@@ -24,9 +24,14 @@ function App() {
       <Student name="Patrick" age={24} isStudent={false} />
       <Student name="Barcio Senior" age={48} isStudent={false} />
       <Student />
+      //
       <UserGreeting isLoggedIn={true} username="HighImExy" />
-      <List items={fruits} category="Fruits" />
-      <List items={vegetables} category="Vegetables" />
+      //
+      {fruits.length > 0 && <List items={fruits} category="Fruits" />}
+      {vegetables.length > 0 && (
+        <List items={vegetables} category="Vegetables" />
+      )}
+      //
       <Button></Button>
     </>
   );
