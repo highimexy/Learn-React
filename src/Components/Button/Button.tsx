@@ -1,7 +1,7 @@
 import styles from "./Button.module.css";
 
 function Button() {
-  const handleClick = (e) => console.log(e);
+  const handleClick = (e) => e.target.textContent = "OUCH! 😀";
   /* let count = 0;
   const handleClick = (name: string) => {
     if (count < 3){
