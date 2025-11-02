@@ -8,7 +8,6 @@ type ListProps = {
   items: Fruit[];
   category?: string;
 };
-
 function List({ items = [], category = "Brak kategorii" }: ListProps) {
   const itemList = items;
   //fruits.sort((a, b) => a.name.localeCompare(b.name)); //ALPHABETICAL
