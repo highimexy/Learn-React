@@ -7,6 +7,8 @@ import type { Fruit } from "./Components/List.tsx";
 
 import ProfilePicture from "./Components/ProfilePicture.tsx";
 
+import MyComponent from "./Components/MyComponent.tsx";
+
 function App() {
   const fruits: Fruit[] = [
     { id: 1, name: "Apple", kcal: 50 },
@@ -36,6 +38,7 @@ function App() {
       //
       <Button></Button>
       <ProfilePicture />
+      <MyComponent></MyComponent>
     </>
   );
 }
