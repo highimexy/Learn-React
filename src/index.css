@@ -1,5 +1,6 @@
 body{
   background-color: rgba(0, 0, 0, 0.557);
+  text-align: center;
 }
 
 .card {
@@ -99,4 +100,21 @@ body{
   color: black;
   cursor: pointer
 
+}
+
+.profile-picture{
+  width: 150px;
+  height: 150px;
+  border-radius: 25px;
+}
+
+.counter-container{
+  text-align: center;
+  font-family: monospace;
+}
+
+.count-display{
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom: 50px;
 }

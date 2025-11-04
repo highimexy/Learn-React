@@ -9,6 +9,8 @@ import ProfilePicture from "./Components/ProfilePicture.tsx";
 
 import MyComponent from "./Components/MyComponent.tsx";
 
+import Counter from "./Components/Counter.tsx";
+
 function App() {
   const fruits: Fruit[] = [
     { id: 1, name: "Apple", kcal: 50 },
@@ -35,10 +37,11 @@ function App() {
       {vegetables.length > 0 && (
         <List items={vegetables} category="Vegetables" />
       )}
-      //
-      <Button></Button>
+    
       <ProfilePicture />
+       <Button />
       <MyComponent></MyComponent>
+      <Counter></Counter>
     </>
   );
 }
