@@ -1,6 +1,5 @@
 body{
   background-color: rgba(0, 0, 0, 0.557);
-  text-align: center;
 }
 
 .card {
@@ -42,13 +41,17 @@ body{
   cursor: pointer;
 }
 
-.student{
+.student {
   border: 2px solid black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 10px;
   font-size: 2em;
   max-width: 265px;
+  display: grid;
+  place-items: center; /* zamiast align-items + justify-items */
+  text-align: center;
 }
+
 
 .student p{
   margin: 0;
