@@ -7,6 +7,7 @@ import ProfilePicture from "./Components/ProfilePicture.tsx";
 import MyComponent from "./Components/MyComponent.tsx";
 import Counter from "./Components/Counter.tsx";
 import Divider from "./Components/Divider.tsx";
+import OnChange from "./Components/OnChange.tsx";
 
 function App() {
   const fruits: Fruit[] = [
@@ -43,6 +44,7 @@ function App() {
       <Divider />
       <Counter></Counter>
       <Divider />
+      <OnChange />
     </>
   );
 }

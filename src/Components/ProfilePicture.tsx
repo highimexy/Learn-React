@@ -1,7 +1,7 @@
 function ProfilePicture() {
   const imageURL = "../src/assets/me.png";
 
-  const handleClick = (e) => (e.target.style.display = "none");
+  const handleClick = (e: any) => (e.target.style.display = "none");
   return (
     <>
       <div className="profile-picture-container">
