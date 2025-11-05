@@ -2,14 +2,11 @@ import Button from "./Components/Button/Button.tsx";
 import Student from "./Components/Student.tsx";
 import UserGreeting from "./Components/UserGreeting.tsx";
 import List from "./Components/List.tsx";
-
 import type { Fruit } from "./Components/List.tsx";
-
 import ProfilePicture from "./Components/ProfilePicture.tsx";
-
 import MyComponent from "./Components/MyComponent.tsx";
-
 import Counter from "./Components/Counter.tsx";
+import Divider from "./Components/Divider.tsx";
 
 function App() {
   const fruits: Fruit[] = [
@@ -30,18 +27,22 @@ function App() {
       <Student name="Patrick" age={24} isStudent={false} />
       <Student name="Barcio Senior" age={48} isStudent={false} />
       <Student />
-      //
+      <Divider />
       <UserGreeting isLoggedIn={true} username="HighImExy" />
-      //
+      <Divider />
       {fruits.length > 0 && <List items={fruits} category="Fruits" />}
       {vegetables.length > 0 && (
         <List items={vegetables} category="Vegetables" />
       )}
-    
+      <Divider />
       <ProfilePicture />
-       <Button />
+      <Divider />
+      <Button />
+      <Divider />
       <MyComponent></MyComponent>
+      <Divider />
       <Counter></Counter>
+      <Divider />
     </>
   );
 }

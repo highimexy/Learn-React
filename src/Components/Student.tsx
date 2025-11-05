@@ -10,10 +10,12 @@ function Student({
   isStudent = false,
 }: StudentProps) {
   return (
-    <div className="student">
-      <p>Name: {name}</p>
-      <p>Age: {age}</p>
-      <p>Student: {isStudent ? "Yes" : "No"}</p>
+    <div className="student-container">
+      <div className="student">
+        <p>Name: {name}</p>
+        <p>Age: {age}</p>
+        <p>Student: {isStudent ? "Yes" : "No"}</p>
+      </div>
     </div>
   );
 }

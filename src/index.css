@@ -1,5 +1,8 @@
 body{
-  background-color: rgba(0, 0, 0, 0.557);
+  background-color: #44444E;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .card {
@@ -41,15 +44,22 @@ body{
   cursor: pointer;
 }
 
+.student-container{
+  display: flex;
+  justify-content: center; /* poziome wyśrodkowanie */
+  padding-top: 10px;
+}
 .student {
-  border: 2px solid black;
+  border: 2px solid #D3DAD9;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 10px;
   font-size: 2em;
-  max-width: 265px;
+  width: 265px;
   display: grid;
   place-items: center; /* zamiast align-items + justify-items */
   text-align: center;
+  color: white;
+  
 }
 
 
@@ -58,15 +68,19 @@ body{
 }
 
 .welcome-message {
+  display: flex;
+  justify-content: center;
   font-family: 'Courier New', Courier, monospace;
   font-size: 2.5em;
-  background-color: cornflowerblue;
-  color: white;
+  background-color: #715A5A;
+  color: #D3DAD9;
   padding: 10px;
   border-radius: 5px;
   max-width: 500px;
   word-wrap: break-word;
-  border: 2px solid black;
+  border: 2px solid #D3DAD9;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .sign-in {
@@ -84,23 +98,23 @@ body{
 .list-category{
   font-size: 2.5em;
   font-weight: bold;
-  color: rgb(97, 97, 97);
+  color: #D3DAD9;
   margin-bottom: 10px;
   text-align: center;
   border: 3px solid;
   border-radius: 5px;
-  background-color: rgb(44, 28, 28);
+  background-color: #715A5A;
 }
 
 .list-items li{
   font-size: 2em;
   list-style: none;
-  color: rgb(41, 41, 41);
+  color: #D3DAD9;
   text-align: center;
   margin: 0;
 }
 .list-items li:hover {
-  color: black;
+  color: #D3DAD9;
   cursor: pointer
 
 }
@@ -114,10 +128,17 @@ body{
 .counter-container{
   text-align: center;
   font-family: monospace;
+  color: #D3DAD9;
 }
 
 .count-display{
   font-size: 10em;
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+.divider{
+  background-color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
