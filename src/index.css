@@ -62,7 +62,7 @@ body {
   margin: 0;
 }
 
-.welcome-message-container{
+.welcome-message-container {
   display: flex;
   justify-content: center;
 }
@@ -118,7 +118,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 
 .profile-picture {
   width: 150px;
@@ -197,9 +196,37 @@ body {
   gap: 10px;
 }
 
-.onchange-container{
+.onchange-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.onchange-container input {
+  height: 40px;
+  font-size: 2em;
+  font-family: monospace;
+  color: #715a5a;
+  background-color: #44444e;
+  border: 2px solid #715a5a;
+  border-radius: 10px;
+  transition: background-color 500ms;
+  transition: color 500ms;
+  padding: 10px;
+}
+
+.onchange-container input:hover {
+background-color: #715a5a;
+  color: #d3dad9;
+}
+
+
+
+.onchange-container p {
+  margin-top: 5px;
+  font-size: 2.5em;
+  font-family: monospace;
+  color: #d3dad9;
+  font-weight: 500;
 }

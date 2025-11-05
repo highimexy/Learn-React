@@ -45,6 +45,7 @@ function App() {
       <Counter></Counter>
       <Divider />
       <OnChange />
+      <Divider />
     </>
   );
 }
