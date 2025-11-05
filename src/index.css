@@ -1,8 +1,5 @@
-body{
-  background-color: #44444E;
-  display: flex;
-  text-align: center;
-  justify-content: center;
+body {
+  background-color: #44444e;
 }
 
 .card {
@@ -16,7 +13,7 @@ body{
   display: inline-block;
 }
 
-.card .card-image{
+.card .card-image {
   max-width: 60%;
   height: auto;
   border-radius: 50%;
@@ -26,13 +23,13 @@ body{
 .card .card-title {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  color: rgb(46, 46, 46)
+  color: rgb(46, 46, 46);
 }
 
-.card .card-description{
+.card .card-description {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
-  color: rgba(46, 46, 46, 0.822)
+  color: rgba(46, 46, 46, 0.822);
 }
 
 .bro-button {
@@ -44,14 +41,14 @@ body{
   cursor: pointer;
 }
 
-.student-container{
+.student-container {
   display: flex;
   justify-content: center; /* poziome wyśrodkowanie */
   padding-top: 10px;
 }
 .student {
-  border: 2px solid #D3DAD9;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 2px solid #d3dad9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 10px;
   font-size: 2em;
   width: 265px;
@@ -59,32 +56,31 @@ body{
   place-items: center; /* zamiast align-items + justify-items */
   text-align: center;
   color: white;
-  
 }
 
-
-.student p{
+.student p {
   margin: 0;
 }
 
-.welcome-message {
+.welcome-message-container{
   display: flex;
   justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
+}
+
+.welcome-message {
+  font-family: "Courier New", Courier, monospace;
   font-size: 2.5em;
-  background-color: #715A5A;
-  color: #D3DAD9;
+  color: #715a5a;
   padding: 10px;
   border-radius: 5px;
-  max-width: 500px;
   word-wrap: break-word;
-  border: 2px solid #D3DAD9;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  border: 2px solid #715a5a;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .sign-in {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 2.5em;
   background-color: rgb(116, 237, 100);
   color: white;
@@ -95,50 +91,108 @@ body{
   border: 2px solid black;
 }
 
-.list-category{
+.list-category {
   font-size: 2.5em;
   font-weight: bold;
-  color: #D3DAD9;
+  color: #d3dad9;
   margin-bottom: 10px;
   text-align: center;
   border: 3px solid;
   border-radius: 5px;
-  background-color: #715A5A;
+  background-color: #715a5a;
 }
 
-.list-items li{
+.list-items li {
   font-size: 2em;
   list-style: none;
-  color: #D3DAD9;
+  color: #d3dad9;
   text-align: center;
   margin: 0;
 }
 .list-items li:hover {
-  color: #D3DAD9;
-  cursor: pointer
-
+  color: #a0a7a6;
+  cursor: pointer;
 }
 
-.profile-picture{
+.profile-picture-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.profile-picture {
   width: 150px;
   height: 150px;
   border-radius: 25px;
 }
 
-.counter-container{
+.mycomponent-container {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+}
+
+.mycomponent-container p {
+  color: #d3dad9;
+  font-size: 2.5em;
+  margin: 5px;
+}
+
+.mycomponent-container button {
+  border: 2px solid #715a5a;
+  background-color: #44444e;
+  padding: 10px;
+  color: #715a5a;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 500ms;
+  transition: color 500ms;
+  font-size: 2em;
+}
+
+.mycomponent-container button:hover {
+  background-color: #715a5a;
+  color: #d3dad9;
+}
+
+.counter-container {
   text-align: center;
   font-family: monospace;
-  color: #D3DAD9;
+  color: #d3dad9;
 }
 
-.count-display{
+.count-display {
   font-size: 10em;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
-.divider{
+.divider {
   background-color: black;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.counter-button {
+  border: 2px solid #715a5a;
+  background-color: #44444e;
+  padding: 10px;
+  color: #715a5a;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 500ms;
+  transition: color 500ms;
+  column-gap: 10px;
+  font-size: 1.5em;
+}
+
+.counter-button:hover {
+  background-color: #715a5a;
+  color: #d3dad9;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }

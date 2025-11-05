@@ -4,7 +4,7 @@ function ProfilePicture() {
   const handleClick = (e) => (e.target.style.display = "none");
   return (
     <>
-      <div>
+      <div className="profile-picture-container">
         <img
           className="profile-picture"
           onClick={(e) => handleClick(e)}

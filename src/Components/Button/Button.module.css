@@ -6,3 +6,8 @@
   border: none;
   cursor: pointer;
 }
+
+.butonContainer{
+  display: flex;
+  justify-content: center;
+}

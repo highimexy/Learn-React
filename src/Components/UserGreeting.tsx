@@ -23,7 +23,9 @@ function UserGreeting({ isLoggedIn = false, username = "default" }: UserProps) {
   //To samo co na górze tylko czytelniejsze
 
   const welcomeMessage = (
-    <h2 className="welcome-message">Welcome:{username}</h2>
+    <div className="welcome-message-container">
+      <h2 className="welcome-message">Welcome:{username}</h2>
+    </div>
   );
 
   const loginPrompt = <h2 className="sign-in">Please sign in</h2>;

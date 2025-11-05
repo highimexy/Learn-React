@@ -1,7 +1,7 @@
 import styles from "./Button.module.css";
 
 function Button() {
-  const handleClick = (e) => e.target.textContent = "OUCH! 😀";
+  const handleClick = (e) => (e.target.textContent = "OUCH! 😀");
   /* let count = 0;
   const handleClick = (name: string) => {
     if (count < 3){
@@ -12,9 +12,13 @@ function Button() {
     }
   }; */
   return (
-    <button onClick={(e) => handleClick(e)} className={styles.brobutton}>
-      Click me 😀
-    </button>
+    <>
+      <div className={styles.butonContainer}>
+        <button onClick={(e) => handleClick(e)} className={styles.brobutton}>
+          Click me 😀
+        </button>
+      </div>
+    </>
   );
 }
 
