@@ -217,11 +217,9 @@ body {
 }
 
 .onchange-container input:hover {
-background-color: #715a5a;
+  background-color: #715a5a;
   color: #d3dad9;
 }
-
-
 
 .onchange-container p {
   margin-top: 5px;
@@ -229,4 +227,21 @@ background-color: #715a5a;
   font-family: monospace;
   color: #d3dad9;
   font-weight: 500;
+  max-width: 800px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.onchange-container textarea {
+  height: 200px;
+  font-size: 2em;
+  font-family: monospace;
+  color: #715a5a;
+  background-color: #44444e;
+  border: 2px solid #715a5a;
+  border-radius: 10px;
+  transition: background-color 500ms;
+  transition: color 500ms;
+  padding: 10px;
+  width: 600px;
 }
