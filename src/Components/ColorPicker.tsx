@@ -3,7 +3,7 @@ import { useState } from "react";
 function ColorPicker() {
   const [color, setColor] = useState("#FFFFFF");
 
-  function handleColorChange(event) {
+  function handleColorChange(event: any) {
     setColor(event.target.value);
   }
   return (

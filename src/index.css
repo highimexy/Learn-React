@@ -279,3 +279,43 @@ body {
   margin: 0px;
 }
 
+.color-picker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-picker-container h1{
+  font-family: monospace;
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: #d3dad9;
+}
+
+.color-display {
+  display: flex;
+  height: 250px;
+  width: 250px;
+  border: 4px solid #715a5a;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  color: #d3dad9;
+}
+
+.color-picker-container label{
+  color: #d3dad9;
+  font-size: 3em;
+  font-family: monospace;
+}
+
+.color-picker-container input {
+  width: 250px;
+  margin-top: 15px;
+  border: 4px solid #715a5a;
+  border-radius: 15px;
+  background-color: white;
+  height: 40px;
+  background-color: #d3dad9;
+}

@@ -48,6 +48,7 @@ function App() {
       <OnChange />
       <Divider />
       <ColorPicker />
+      <Divider />
     </>
   );
 }
